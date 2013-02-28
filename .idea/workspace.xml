@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watch.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input1.js" afterPath="$PROJECT_DIR$/src/input1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input2.js" afterPath="$PROJECT_DIR$/src/input2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input3.js" afterPath="$PROJECT_DIR$/src/input3.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test.jslist" afterPath="$PROJECT_DIR$/build/test.jslist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="concatenator.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362064889759" ignored="false" />
     <file path="/test.jslist" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362067765422" ignored="false" />
-    <file path="/input1.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362065101665" ignored="false" />
+    <file path="/input1.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362071329724" ignored="false" />
     <file path="/input2.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362065141304" ignored="false" />
     <file path="/input3.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362065164288" ignored="false" />
-    <file path="/main.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362068520970" ignored="false" />
+    <file path="/main.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362071529416" ignored="false" />
     <file path="/watch.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362068678877" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +80,34 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.9131737">
+            <state line="12" column="16" selection-start="186" selection-end="186" vertical-scroll-proportion="0.17964073">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input1.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="8" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input2.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input3.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,34 +125,7 @@
       <file leaf-file-name="test.jslist" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/test.jslist">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="14" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input1.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/input1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="4" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input2.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/input2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="48" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input3.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/input3.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+            <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,12 +149,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/input1.js" />
-        <option value="$PROJECT_DIR$/src/input2.js" />
+        <option value="$PROJECT_DIR$/watch.js" />
         <option value="$PROJECT_DIR$/src/input3.js" />
         <option value="$PROJECT_DIR$/build/test.jslist" />
+        <option value="$PROJECT_DIR$/src/input1.js" />
+        <option value="$PROJECT_DIR$/src/input2.js" />
         <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/watch.js" />
       </list>
     </option>
   </component>
@@ -429,27 +431,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/input1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="48" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/watch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="24" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
@@ -459,14 +440,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/test.jslist">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="8" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.9131737">
+        <state line="12" column="16" selection-start="186" selection-end="186" vertical-scroll-proportion="0.17964073">
           <folding />
         </state>
       </provider>

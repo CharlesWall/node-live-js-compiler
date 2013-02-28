@@ -1,4 +1,3 @@
-
 fs = require('fs');
 compressor = require('node-minify');
 
@@ -10,6 +9,8 @@ var Concat = {
 	options: {
 		compression: true
 	},
+
+    modules: [],
 
 	build: function(){
 		var concat = this;
@@ -50,7 +51,6 @@ var Concat = {
 	},
 
 	concatFiles: function(targetFile, lines){
-		var ostream = fs.createWriteStream(targetFile);
 		var files = [];
 
 		var concat = this;
@@ -60,28 +60,52 @@ var Concat = {
 			if(file) files.push(file);
 		});
 
+        var mod = {
+            outputFile: targetFile,
+            inputFiles: files
+        };
+        this.modules.push(mod);
+        if (this.options.auto) this.watchModule(mod);
+        this.buildModule(mod);
+    },
+
+    buildModule: function(mod){
+        console.log("building..." + mod.outputFile);
+
         new compressor.minify({
             type: this.options.compression ? 'yui-js' : 'no-compress',
-            fileIn: files,
-            fileOut: targetFile,
+            fileIn: mod.inputFiles,
+            fileOut: mod.outputFile,
             callBack: function(err){
                 console.log(err);
             }
         });
-	}
+    },
+
+    watchModule: function(mod){
+        var concat = this;
+        mod.inputFiles.forEach(function(file){
+            console.log("watching... " + file)
+            fs.watchFile(file, function(){
+                console.log(file + " changed");
+                concat.buildModule(mod);
+            });
+        });
+    }
 };
 
-var directories =  [];
-
 process.argv.slice(2).forEach(function(arg){
-	if(arg == "--no-compress"){
-		Concat.options.compression = false;
-	} else {
-		Concat.directories.push(arg);
-	}
+	switch(arg){
+        case "--no-compress":
+            Concat.options.compression = false;
+            break;
+        case "-a":
+        case "--auto":
+            Concat.options.auto = true;
+            break;
+        default:
+            Concat.directories.push(arg);
+    }
 });
 
 Concat.build();
-
-
-
