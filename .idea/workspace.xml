@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input1.js" afterPath="$PROJECT_DIR$/src/input1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input2.js" afterPath="$PROJECT_DIR$/src/input2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input3.js" afterPath="$PROJECT_DIR$/src/input3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/concatenator.iml" afterPath="$PROJECT_DIR$/concatenator.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test.jslist" afterPath="$PROJECT_DIR$/build/test.jslist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="concatenator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +13,7 @@
     <file path="/input1.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362071329724" ignored="false" />
     <file path="/input2.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362065141304" ignored="false" />
     <file path="/input3.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362065164288" ignored="false" />
-    <file path="/main.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362071529416" ignored="false" />
+    <file path="/main.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362076332371" ignored="false" />
     <file path="/watch.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362068678877" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,19 +74,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="16" selection-start="186" selection-end="186" vertical-scroll-proportion="0.17964073">
+            <state line="86" column="55" selection-start="1948" selection-end="1948" vertical-scroll-proportion="-19.26923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input1.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="node-minify.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/node-minify/lib/node-minify.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input1.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/input1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="8" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+            <state line="14" column="17" selection-start="200" selection-end="200" vertical-scroll-proportion="0.20467836">
               <folding />
             </state>
           </provider>
@@ -108,15 +114,6 @@
         <entry file="file://$PROJECT_DIR$/src/input3.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="watch.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/watch.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,15 +149,14 @@
         <option value="$PROJECT_DIR$/watch.js" />
         <option value="$PROJECT_DIR$/src/input3.js" />
         <option value="$PROJECT_DIR$/build/test.jslist" />
-        <option value="$PROJECT_DIR$/src/input1.js" />
         <option value="$PROJECT_DIR$/src/input2.js" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/src/input1.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="36" />
+    <option name="y" value="22" />
     <option name="width" value="1920" />
     <option name="height" value="1174" />
   </component>
@@ -232,12 +228,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="settings.nodejs" />
+    <property name="last_opened_file_path" value="/usr/local/Cellar/node/0.8.18/bin/node" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -338,6 +343,24 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" name="Default" comment="" />
@@ -347,8 +370,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="36" width="1920" height="1174" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1920" height="1174" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -366,7 +389,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -431,13 +454,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/watch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/test.jslist">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
@@ -452,13 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="8" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/input2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
@@ -466,13 +475,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/node-minify/lib/node-minify.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="186" selection-end="186" vertical-scroll-proportion="0.17964073">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="55" selection-start="1948" selection-end="1948" vertical-scroll-proportion="-19.26923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="200" selection-end="200" vertical-scroll-proportion="0.20467836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>actionmailer (v3.2.11, RVM: ruby-1.9.3-p374) [gem]</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>RVM: ruby-1.9.3-p374</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>concatenator</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

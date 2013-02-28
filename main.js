@@ -1,6 +1,11 @@
 fs = require('fs');
 compressor = require('node-minify');
 
+var minify = function(options){
+    var Minify = compressor.minify;
+    return new Minify(options);
+};
+
 var Concat = {
 	listPattern: new RegExp(".*\.jslist"),
 
@@ -56,7 +61,7 @@ var Concat = {
 		var concat = this;
 
 		lines.forEach(function(line){
-			var file = concat.getFileFromLine(line)
+			var file = concat.getFileFromLine(line);
 			if(file) files.push(file);
 		});
 
@@ -72,12 +77,15 @@ var Concat = {
     buildModule: function(mod){
         console.log("building..." + mod.outputFile);
 
-        new compressor.minify({
+        minify({
             type: this.options.compression ? 'yui-js' : 'no-compress',
             fileIn: mod.inputFiles,
             fileOut: mod.outputFile,
-            callBack: function(err){
-                console.log(err);
+            callback: function(err){
+                if(err) console.log(err);
+                else {
+                    console.log("build complete! ..." + mod.outputFile);
+                }
             }
         });
     },
@@ -85,7 +93,7 @@ var Concat = {
     watchModule: function(mod){
         var concat = this;
         mod.inputFiles.forEach(function(file){
-            console.log("watching... " + file)
+            console.log("watching... " + file);
             fs.watchFile(file, function(){
                 console.log(file + " changed");
                 concat.buildModule(mod);
