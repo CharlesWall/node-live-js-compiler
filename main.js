@@ -32,27 +32,21 @@ var Concat = {
 	buildList: function(listFileName){
 		var concat = this;
 		fs.readFile(listFileName, 'ascii', function(err, data){
-			if(!err){
+            if(err){
+                console.log(err);
+            } else {
 				var lines = data.toString().split('\n');
 
 
 				var targetFile = lines.shift();
 
 				concat.concatFiles(targetFile, lines);
-			} else {
-				console.error(err);
 			}
 		})
 	},
 	
 	getFileFromLine: function(line){
-		var fileName = line.split('#')[0]
-		if(fileName && fileName.length){
-			return fileName;
-		} else {
-			return null;
-		}
-
+		return line.split('#')[0];
 	},
 
 	concatFiles: function(targetFile, lines){
@@ -75,7 +69,7 @@ var Concat = {
             }
         });
 	}
-}
+};
 
 var directories =  [];
 
@@ -88,4 +82,6 @@ process.argv.slice(2).forEach(function(arg){
 });
 
 Concat.build();
+
+
 
