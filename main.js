@@ -1,12 +1,15 @@
 
 fs = require('fs');
-
-var args = process.argv;
+compressor = require('node-minify');
 
 var Concat = {
 	listPattern: new RegExp(".*\.jslist"),
 
 	directories: [],
+
+	options: {
+		compression: true
+	},
 
 	build: function(){
 		var concat = this;
@@ -31,6 +34,7 @@ var Concat = {
 		fs.readFile(listFileName, 'ascii', function(err, data){
 			if(!err){
 				var lines = data.toString().split('\n');
+
 
 				var targetFile = lines.shift();
 
@@ -62,25 +66,26 @@ var Concat = {
 			if(file) files.push(file);
 		});
 
-		console.log(targetFile);
-		console.log(files);
-
-		this.pushFile(ostream, files, 0);
-	},
-	
-	pushFile: function(ostream, files, index){
-		var file = files[index];
-		var concat = this;
-		if(file){
-			var istream = fs.createReadStream(file);
-			istream.pipe(ostream, {end: false})
-			istream.on('end', function(){
-				concat.pushFile(ostream, files, ++index);
-			});
-		}
+        new compressor.minify({
+            type: this.options.compression ? 'yui-js' : 'no-compress',
+            fileIn: files,
+            fileOut: targetFile,
+            callBack: function(err){
+                console.log(err);
+            }
+        });
 	}
 }
 
-Concat.directories = args.slice(2);
+var directories =  [];
+
+process.argv.slice(2).forEach(function(arg){
+	if(arg == "--no-compress"){
+		Concat.options.compression = false;
+	} else {
+		Concat.directories.push(arg);
+	}
+});
+
 Concat.build();
 
