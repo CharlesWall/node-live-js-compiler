@@ -11,7 +11,7 @@
     <file path="/input1.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362071329724" ignored="false" />
     <file path="/input2.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362065141304" ignored="false" />
     <file path="/input3.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362065164288" ignored="false" />
-    <file path="/main.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362088234268" ignored="false" />
+    <file path="/main.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362089716322" ignored="false" />
     <file path="/watch.js" changelist="d84e570d-e0d8-44dd-bcba-8f4ded5bbf0d" time="1362068678877" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="6" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.24124514">
+            <state line="43" column="60" selection-start="962" selection-end="962" vertical-scroll-proportion="0.56906617">
               <folding />
             </state>
           </provider>
@@ -501,7 +501,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="6" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.24124514">
+        <state line="43" column="60" selection-start="962" selection-end="962" vertical-scroll-proportion="0.56906617">
           <folding />
         </state>
       </provider>

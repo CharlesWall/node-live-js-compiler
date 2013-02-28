@@ -41,10 +41,10 @@ var Concat = {
             if(err){
                 console.log(err);
             } else {
-				var lines = data.toString().split('\n');
+				var lines = data.toString().split(/[\n\r]/);
 
 
-				var targetFile = lines.shift();
+				var targetFile = lines.shift().trim();
 
 				concat.concatFiles(targetFile, lines);
 			}
@@ -103,6 +103,11 @@ var Concat = {
     }
 };
 
+var args = process.argv;
+
+for(var i = 2; i < args.length; i++){
+    var arg = args[i];
+}
 process.argv.slice(2).forEach(function(arg){
 	switch(arg){
         case "--no-compress":
