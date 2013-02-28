@@ -1,2 +1,2 @@
-concatenator.iml
-.idea
+*.iml
+.idea*
