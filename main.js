@@ -52,7 +52,7 @@ var Concat = {
 	},
 	
 	getFileFromLine: function(line){
-		return line.split('#')[0];
+		return line.split('#')[0].trim();
 	},
 
 	concatFiles: function(targetFile, lines){
@@ -81,6 +81,7 @@ var Concat = {
             type: this.options.compression ? 'yui-js' : 'no-compress',
             fileIn: mod.inputFiles,
             fileOut: mod.outputFile,
+
             callback: function(err){
                 if(err) console.log(err);
                 else {
