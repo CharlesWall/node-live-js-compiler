@@ -12,7 +12,9 @@ var Concat = {
 	directories: [],
 
 	options: {
-		compression: true
+		compression: true,
+        auto: false,
+        targetPath: ""
 	},
 
     modules: [],
@@ -43,12 +45,11 @@ var Concat = {
             } else {
 				var lines = data.toString().split(/[\n\r]/);
 
-
-				var targetFile = lines.shift().trim();
+				var targetFile = this.options.targetPath + "/" + lines.shift().trim();
 
 				concat.concatFiles(targetFile, lines);
 			}
-		})
+		});
 	},
 	
 	getFileFromLine: function(line){
@@ -107,9 +108,7 @@ var args = process.argv;
 
 for(var i = 2; i < args.length; i++){
     var arg = args[i];
-}
-process.argv.slice(2).forEach(function(arg){
-	switch(arg){
+    switch(arg){
         case "--no-compress":
             Concat.options.compression = false;
             break;
@@ -117,9 +116,14 @@ process.argv.slice(2).forEach(function(arg){
         case "--auto":
             Concat.options.auto = true;
             break;
+        case "-d":
+        case "--dir":
+        case "--directory":
+            Concat.options.targetPath = args[++i];
+            break;
         default:
             Concat.directories.push(arg);
     }
-});
+}
 
 Concat.build();
