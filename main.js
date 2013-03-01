@@ -45,7 +45,13 @@ var Concat = {
             } else {
 				var lines = data.toString().split(/[\n\r]/);
 
-				var targetFile = this.options.targetPath + "/" + lines.shift().trim();
+                var path = concat.options.targetPath;
+                if(path){
+                    if(path[path.length-1] != '/')
+                        path += '/';
+                }
+
+				var targetFile =  path + lines.shift().trim();
 
 				concat.concatFiles(targetFile, lines);
 			}
@@ -97,10 +103,17 @@ var Concat = {
         mod.inputFiles.forEach(function(file){
             console.log("watching... " + file);
             fs.watchFile(file, function(){
+                var date = new Date();
+                console.log("=========== " + date.getHours() + ":" + date.getMinutes()
+                    + ":" + date.getSeconds() + "============");
                 console.log(file + " changed");
                 concat.buildModule(mod);
             });
         });
+    },
+
+    outputUsage: function(){
+        console.log("stitchjs [--no-compress|--auto|--help|--directory] [directory]")
     }
 };
 
@@ -121,6 +134,9 @@ for(var i = 2; i < args.length; i++){
         case "--directory":
             Concat.options.targetPath = args[++i];
             break;
+        case "-h":
+        case "--help":
+            Concat.outputUsage();
         default:
             Concat.directories.push(arg);
     }
