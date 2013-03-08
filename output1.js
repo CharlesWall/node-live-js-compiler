@@ -1,1 +1,0 @@
-var x=1;console.log(x);var y=21;var TestFunction=function(){this.init()};var p=TestFunction().prototype;p.init=function(){console.log("hello world")};new TestFunction();console.log("thiesehamsters");y=x+1+2;

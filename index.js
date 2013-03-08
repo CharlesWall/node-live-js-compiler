@@ -1,5 +1,6 @@
 fs = require('fs');
 compressor = require('node-minify');
+os = require('os');
 
 var minify = function(options){
     var Minify = compressor.minify;
@@ -8,6 +9,10 @@ var minify = function(options){
 
 var Concat = {
 	listPattern: new RegExp(".*\.jslist"),
+	jsPattern: new RegExp(".*\.jslist"),
+	cssPattern: new RegExp(".*\.csslist"),
+
+    pathSeparator: os.platform() == "windows" ? '\\' : '/',
 
 	directories: [],
 
@@ -43,12 +48,15 @@ var Concat = {
             if(err){
                 console.log(err);
             } else {
-				var lines = data.toString().split(/[\n\r]/);
+				var lines = data
+                    .toString()
+                    .replace(/[\\\/]/g, concat.pathSeparator) //for OS compatibility
+                    .split(/[\n\r]/);
 
                 var path = concat.options.targetPath;
                 if(path){
-                    if(path[path.length-1] != '/')
-                        path += '/';
+                    if(path[path.length-1] != concat.pathSeparator)
+                        path += concat.pathSeparator;
                 }
 
 				var targetFile =  path + lines.shift().trim();
@@ -113,7 +121,7 @@ var Concat = {
     },
 
     outputUsage: function(){
-        console.log("stitchjs [--no-compress|--auto|--help|--directory] [directory]")
+        console.log("stitchjs [--no-compress|--auto|--help|--directory] [directory]");
     }
 };
 
@@ -129,14 +137,15 @@ for(var i = 2; i < args.length; i++){
         case "--auto":
             Concat.options.auto = true;
             break;
-        case "-d":
-        case "--dir":
-        case "--directory":
+        case "-o":
+        case "--out":
+        case "--output":
             Concat.options.targetPath = args[++i];
             break;
         case "-h":
         case "--help":
             Concat.outputUsage();
+            break;
         default:
             Concat.directories.push(arg);
     }
